@@ -108,11 +108,7 @@
             {{ $kota_tanda_tangan }}, {{ $tanggal_tanda_tangan }}
         </div>
         <div class="stamp-box">
-            @if(!empty($stamp_base64))
-                <img src="{{ $stamp_base64 }}" class="stamp-img" alt="Stempel/Tanda Tangan">
-            @elseif(file_exists(public_path('stempel.png')))
-                <img src="{{ public_path('stempel.png') }}" class="stamp-img" alt="Stempel/Tanda Tangan">
-            @endif
+            <!-- Area Stempel / TTD Manual -->
         </div>
         <div class="signee-name">
             {{ $nama_penandatangan }}
